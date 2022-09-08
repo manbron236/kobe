@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 90px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: rgb(25,12,41);
+}
+
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    background-color: indigo;
+    height: 80px;
+    width: 100%;
+    z-index: 15;
+}
+
+.nav_logo {
+    display: inline-block;
+}
+
+.nav_logo .nav_name 
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+}
+
+.nav .nav_list
+{
+    float: right;
+    margin-right: 25px;
+}
+
+.nav .nav_list .nav_item
+{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.nav .nav_list .nav_item .nav_link
+{
+    color: white;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.nav .nav_list .nav_item .nav_link:hover{
+    background-color: #e2b9ff;
+    transition: .5s;
+}
+
+.checkbth {
+    font-size: 27px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+@media (max-width: 1455px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1375px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1255px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 65px;
+    }
+
+    .checkbth 
+    {
+        display: block;
+    }
+    .nav .nav_list
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #bd71ff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav .nav_list .nav_item
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 20px;
+    }
+
+    .nav .nav_list .nav_item .nav_link:hover
+    {
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+/* INPUT 가리기 */
+.section input[id*="slide"] {display:none;}
+.section .mainname
+{
+    font-family: 'Anton', sans-serif;
+    width: 500px;
+    padding: 20px;
+    background-color: #a648ff;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 8px;
+}
+/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+.section .slidewrap 
+{
+    max-width:800px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.section .slidelist 
+{
+    white-space:nowrap;
+    font-size:0;
+}
+.section .slidelist > li 
+{
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+}
+.section .slidelist > li > a 
+{
+    display:block;
+    position:relative;
+}
+.section .slidelist > li > a img 
+{
+    width:100%;
+}
+
+/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+.section .slidelist label 
+{
+    position:absolute;
+    z-index: 5;
+    top:50%;
+    transform:translateY(-50%);
+    padding:50px;cursor:pointer;
+}
+.section .slidelist .left 
+{
+    left:30px;
+    background:url('./img/left.png') center center / 100% no-repeat;
+}
+.section .slidelist .right 
+{
+    right:30px;
+    background:url('./img/right.png') center center / 100% no-repeat;
+}
+
+/* INPUT 체크되면 변화값이 li까지 전달되는 스타일 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+
+
+.section .snslink
+{
+    width: 300px;
+    padding: 20px;
+    background-color: #a648ff;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.section .snslink a
+{
+    padding: 0;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.know
+{
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-image: url('../img/Kobe-Bryant-Lakers24-Hero.png');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: right bottom;
+}
+.know h2
+{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.know hr
+{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border-top: 1px solid white;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.HL
+{
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    margin: 65px auto 100px 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.HL hr
+{
+    width: 1800px;
+}
+
+
+.HL a img
+{
+    margin-top: 35px;
+    width: 500px;
+    margin-right: 100px;
+}

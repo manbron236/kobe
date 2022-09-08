@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 90px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: rgb(25,12,41);
+}
+
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    background-color: indigo;
+    height: 80px;
+    width: 100%;
+    z-index: 15;
+}
+
+.nav_logo {
+    display: inline-block;
+}
+
+.nav_logo .nav_name 
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+}
+
+.nav .nav_list
+{
+    float: right;
+    margin-right: 25px;
+}
+
+.nav .nav_list .nav_item
+{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.nav .nav_list .nav_item .nav_link
+{
+    color: white;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.nav .nav_list .nav_item .nav_link:hover{
+    background-color: #e2b9ff;
+    transition: .5s;
+}
+
+.checkbth {
+    font-size: 27px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+
+.Mamba
+{
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    margin: 60px auto 150px auto;
+    font-size: 20px;
+    padding: 40px;
+}
+
+hr
+{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border-top: 1px solid white;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 130px;
+}
+
+.Mamba h1
+{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+.MMmeans
+{
+    float: left;
+    width: 40%;
+    height: 1000px;
+    background-image: url(../img/kobeb.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    border-radius: 12px;
+    margin-bottom: 130px;
+}
+
+.MMmeans p
+{
+    color:  darkgoldenrod;
+    font-size: 20px;
+    padding: 10px;
+    float: right;
+    margin: 25px;
+    width: 40%;
+}
+
+.meanfloat2
+{
+    clear: both;
+}
+
+.MMsentance
+{
+    float: right;
+    width: 40%;
+    height: 250px;
+    background-color: black;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.MMsentance p
+{
+    color:  darkgoldenrod;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.MMother
+{
+    float: right;
+    width: 40%;
+    height: 600px;
+    background-color: black;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.MMother h2
+{
+    color: darkgrey;
+    padding: 25px;
+    background-color: rgb(94, 69, 6);
+    border-radius: 12px;
+}
+
+.MMother p
+{
+    color:  darkgoldenrod;
+    font-size: 20px;
+    padding: 25px;
+}
+.MMother img
+{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.MMother:hover
+{
+    transition: 2s ease;
+    height: 1550px;
+}
+
+.mmimg
+{
+    float: left;
+    width: 45%;
+    height: 500px;
+    background-color: black;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+#mmimg3
+{
+    float: right;
+}
+
+.mmimg img
+{
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media (max-width: 1455px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1375px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1255px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 65px;
+    }
+
+    .checkbth 
+    {
+        display: block;
+    }
+    .nav .nav_list
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #bd71ff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav .nav_list .nav_item
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 20px;
+    }
+
+    .nav .nav_list .nav_item .nav_link:hover
+    {
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}

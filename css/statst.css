@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0 solid;
+}
+
+body {
+    padding-top: 90px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: rgb(25,12,41);
+}
+
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    background-color: indigo;
+    height: 80px;
+    width: 100%;
+    z-index: 15;
+}
+
+.nav_logo {
+    display: inline-block;
+}
+
+.nav_logo .nav_name 
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+}
+
+.nav .nav_list
+{
+    float: right;
+    margin-right: 25px;
+}
+
+.nav .nav_list .nav_item
+{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.nav .nav_list .nav_item .nav_link
+{
+    color: white;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.nav .nav_list .nav_item .nav_link:hover{
+    background-color: #e2b9ff;
+    transition: .5s;
+}
+
+.checkbth {
+    font-size: 27px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+.Qstats
+{
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    margin: 60px auto 50px auto;
+    font-size: 20px;
+}
+
+hr
+{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border-top: 2px solid white;
+    padding: 2px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 150px;
+}
+
+.Qstats h1
+{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.Qstats h2
+{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: gold;
+}
+
+.Qstats .Quickfactsstatscontainer
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.QuickfactsFlex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+.QuickfactsFlexcontainer
+{
+    display: flex;
+}
+
+.QuickfactsFlexcontent
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.QuickfactsFlexcontent .QuickfactsData
+{
+    background-color: #1D428A;
+    font-weight: 500;
+    display: flex;
+    text-transform: uppercase;
+    padding: 12px;
+    font-size: 120px;
+}
+
+.QuickfactsFlexcontent .Quickfactstitle
+{
+    background-color: #1D428A;
+    line-height: 150%;
+    padding: 0 5px;
+    display: flex;
+    margin-top: 3px;
+    min-height: 0;
+    font-size: 14px;
+}
+
+.Rstatscontainer {
+    padding: 200px;
+    color: white;
+}
+
+.RegularStats
+{
+    float: left;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.Rheader
+{
+    border: 1px solid white;
+    background-color: #1D428A;
+}
+
+.RegularStats tr{
+    border: 1px solid darkgrey;
+}
+.RegularStats td 
+{
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+.RegularStats .Rtitle
+{
+    background-color: #1D428A;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.PlayoffStats
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.Pheader
+{
+    border: 1px solid white;
+    background-color: #1D428A;
+}
+
+.PlayoffStats tr{
+    border: 1px solid darkgrey;
+}
+.PlayoffStats td 
+{
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+.PlayoffStats .Ptitle
+{
+    background-color: #1D428A;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+@media (max-width: 1455px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1375px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 13px;
+    }
+    .QuickfactsFlexcontent .QuickfactsData {
+        font-size: 80px;
+    }
+    .QuickfactsFlexcontent .Quickfactstitle
+    {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1255px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 65px;
+    }
+
+    .checkbth 
+    {
+        display: block;
+    }
+    .nav .nav_list
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #bd71ff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav .nav_list .nav_item
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 20px;
+    }
+
+    .nav .nav_list .nav_item .nav_link:hover
+    {
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .QuickfactsFlexcontent .QuickfactsData {
+        font-size: 60px;
+    }
+    .QuickfactsFlexcontent .Quickfactstitle
+    {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .Qstats 
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Qstats {
+    padding: 0 1rem 0.25rem;
+    }
+}

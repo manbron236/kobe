@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 90px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: rgb(25,12,41);
+}
+
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    background-color: indigo;
+    height: 80px;
+    width: 100%;
+    z-index: 15;
+}
+
+.nav_logo {
+    display: inline-block;
+}
+
+.nav_logo .nav_name 
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+}
+
+.nav .nav_list
+{
+    float: right;
+    margin-right: 25px;
+}
+
+.nav .nav_list .nav_item
+{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.nav .nav_list .nav_item .nav_link
+{
+    color: white;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.nav .nav_list .nav_item .nav_link:hover{
+    background-color: #e2b9ff;
+    transition: .5s;
+}
+
+.checkbth {
+    font-size: 27px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+
+
+hr
+{
+    margin: 150px auto;
+    color: white;
+    width: 1700px;
+}
+
+.profilet 
+{
+    font-family: 'Do Hyeon', sans-serif;
+    width: 1000px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.profilet .trimg
+{
+    border-top: none;
+}
+
+.profilet img
+{
+    width: 600px;
+}
+
+.profilet tr td
+{
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+.profilet .t1
+{
+    border: none;
+}
+.profilet .t2
+{
+    padding: 35px 20px 35px 20px;
+    font-size: 40px;
+    background-color: indigo;
+    color: gold;
+}
+.profilet .t3
+{
+    background-color: indigo;
+}
+
+
+.AH
+{
+    font-family: 'Do Hyeon', sans-serif;
+    width: 1000px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.Award-History
+{
+    background-color: beige;
+    width: 500px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-collapse: collapse;
+}
+
+.Award-History td
+{
+    padding: 10px;
+    border: 1px solid indigo;
+    color: black;
+}
+
+span hr
+{
+    margin-top: 450px;
+    margin-bottom: 20px;
+}
+
+.Achievement
+{
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    margin: 60px auto 50px 110px;
+    font-size: 20px;
+}
+
+.Achievement h1
+{
+    margin-bottom: 50px;
+}
+
+.Achievement h2
+{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: gold;
+}
+
+.Achievement img
+{
+    width: 600px;
+}
+
+.Achievement div
+{
+    margin-bottom: 100px;
+}
+.Achievement p
+{
+    margin-bottom: 15px;
+}
+
+.Achievement .copy
+{
+    font-size: 15px;
+}
+
+@media (max-width: 1455px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1375px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1255px)
+{
+    .nav_logo
+    {
+        font-size: 30px;
+        padding-left: 65px;
+    }
+
+    .checkbth 
+    {
+        display: block;
+    }
+    .nav .nav_list
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #bd71ff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav .nav_list .nav_item
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav .nav_list .nav_item .nav_link
+    {
+        font-size: 20px;
+    }
+
+    .nav .nav_list .nav_item .nav_link:hover
+    {
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
